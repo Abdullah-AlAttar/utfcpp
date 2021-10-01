@@ -9,10 +9,10 @@ utfcpp_dep = declare_dependency(
 
 host_system = host_machine.system()
 
-if host_system == 'windows'
+#if host_system == 'windows'
   # add_global_link_arguments('/utf-8', language : 'cpp')
-  add_global_arguments('/utf-8', language : 'cpp')
-  add_global_arguments('/DUTF_CPP_CPLUSPLUS=201703L', language : 'cpp')
-endif
+ # add_global_arguments('/utf-8', language : 'cpp')
+  #add_global_arguments('/DUTF_CPP_CPLUSPLUS=201703L', language : 'cpp')
+#endif
 
 
